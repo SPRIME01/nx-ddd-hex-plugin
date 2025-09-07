@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "Port",
+  "title": "Port Generator",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the port.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What is the name of the port?"
+    },
+    "domain": {
+      "type": "string",
+      "description": "The name of the domain.",
+      "x-prompt": "Which domain is this port for?"
+    },
+    "language": {
+      "type": "string",
+      "description": "The language of the port (ts or py).",
+      "enum": ["ts", "py"],
+      "x-prompt": "Which language is this port for?"
+    }
+  },
+  "required": ["name", "domain", "language"]
+}

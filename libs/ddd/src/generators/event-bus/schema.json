@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "EventBus",
+  "title": "Event Bus Generator",
+  "type": "object",
+  "properties": {
+    "domain": {
+      "type": "string",
+      "description": "The name of the domain.",
+      "x-prompt": "Which domain is this Event Bus for?"
+    },
+    "language": {
+      "type": "string",
+      "description": "The language of the Event Bus (ts or py).",
+      "enum": ["ts", "py"],
+      "x-prompt": "Which language is this Event Bus for?"
+    }
+  },
+  "required": ["domain", "language"]
+}

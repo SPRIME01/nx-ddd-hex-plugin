@@ -1,0 +1,8 @@
+{
+  "name": "my-test-domain-application",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/my-test-domain/application/src",
+  "targets": {},
+  "tags": ["type:application", "domain:my-test-domain"]
+}

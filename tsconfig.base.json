@@ -10,10 +10,7 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
@@ -24,31 +21,24 @@
       "@angular-architects/checkin/feature-manage": [
         "libs/checkin/feature-manage/src/index.ts"
       ],
-      "@angular-architects/ddd": [
-        "libs/ddd/src/index.ts"
-      ],
+      "@angular-architects/ddd": ["libs/ddd/src/index.ts"],
       "@angular-architects/feature/domain": [
         "libs/feature/domain/src/index.ts"
       ],
-      "@angular-architects/miles/domain": [
-        "libs/miles/domain/src/index.ts"
-      ],
+      "@angular-architects/miles/domain": ["libs/miles/domain/src/index.ts"],
       "@angular-architects/miles/feature-manage": [
         "libs/miles/feature-manage/src/index.ts"
+      ],
+      "@fixture/fixture-application": [
+        "tests/fixtures/hex-architecture/application/src/index.ts"
       ],
       "@fixture/fixture-domain": [
         "tests/fixtures/hex-architecture/domain/src/index.ts"
       ],
       "@fixture/fixture-infrastructure": [
         "tests/fixtures/hex-architecture/infrastructure/src/index.ts"
-      ],
-      "@fixture/fixture-application": [
-        "tests/fixtures/hex-architecture/application/src/index.ts"
       ]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "UoW",
+  "title": "UoW Generator",
+  "type": "object",
+  "properties": {
+    "domain": {
+      "type": "string",
+      "description": "The name of the domain.",
+      "x-prompt": "Which domain is this UoW for?"
+    },
+    "language": {
+      "type": "string",
+      "description": "The language of the UoW (ts or py).",
+      "enum": ["ts", "py"],
+      "x-prompt": "Which language is this UoW for?"
+    }
+  },
+  "required": ["domain", "language"]
+}

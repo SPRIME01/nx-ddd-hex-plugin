@@ -38,6 +38,26 @@
       "factory": "./src/generators/util/index",
       "schema": "./src/generators/util/schema.json",
       "description": "adds a utility library to a domain or as a shared library"
+    },
+    "hex-domain": {
+      "factory": "./src/generators/hex-domain/index",
+      "schema": "./src/generators/hex-domain/schema.json",
+      "description": "creates a hexagonal domain with domain, application, and infrastructure layers"
+    },
+    "port": {
+      "factory": "./src/generators/port/index",
+      "schema": "./src/generators/port/schema.json",
+      "description": "creates a port and an adapter for a domain"
+    },
+    "uow": {
+      "factory": "./src/generators/uow/index",
+      "schema": "./src/generators/uow/schema.json",
+      "description": "creates a unit of work for a domain"
+    },
+    "event-bus": {
+      "factory": "./src/generators/event-bus/index",
+      "schema": "./src/generators/event-bus/schema.json",
+      "description": "creates an event bus for a domain"
     }
   }
 }
